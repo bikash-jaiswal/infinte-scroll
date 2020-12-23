@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap");
+
+html {
+  /* padding will stretch the page 
+    prevents from happening horizontal scroll bar*/
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh; /*stretch the height 100%*/
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+/* loader  */
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* make image in center regardless of svg size */
+  transform: translate(-50%, -50%);
+}
