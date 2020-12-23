@@ -11,10 +11,11 @@ body {
   min-height: 100vh; /*stretch the height 100%*/
   background-color: whitesmoke;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   font-family: "Open Sans", sans-serif;
 }
-
+/* title */
 h1 {
   text-align: center;
   margin-top: 25px;
@@ -38,4 +39,29 @@ h1 {
   left: 50%;
   /* make image in center regardless of svg size */
   transform: translate(-50%, -50%);
+}
+
+/* image conatiner */
+.image-container {
+  /* left and right make 30% margin and top and bottom just 10 px 
+  so image box will cover just 40%
+  */
+  margin: 10px 30%;
+}
+
+.image-container img {
+  /* within 40% cover all box i.e 100% */
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* media queries: large smartphone */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  .image-container {
+    margin: 10px 5%;
+  }
 }
